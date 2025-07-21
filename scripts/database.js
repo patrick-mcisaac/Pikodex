@@ -1,4 +1,4 @@
-const database = [
+export const database = [
     {
         id: 1,
         name: 'Crouchy',
@@ -46,7 +46,7 @@ const database = [
         category: 'Business',
         abilities: 'PowerPoint Mastery',
         weakness: 'Paper Cuts'
-    },   
+    },
     {
         id: 7,
         name: 'Tarmus',

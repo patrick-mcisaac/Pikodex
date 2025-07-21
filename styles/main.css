@@ -1,8 +1,13 @@
+body {
+    background: radial-gradient(circle, rgba(46, 171, 152, 1) 0%, rgba(46, 136, 171, 1) 100%);
+}
+
 #title {
     text-align: center;
     font-family: copperplate;
-    font-size: 5em;
+    font-size: 7rem;
     margin-top: 1rem;
+    color: black;
 }
 
 #container {
@@ -16,35 +21,86 @@
 .piko-card {
     flex-basis: 25%;
     margin: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background: linear-gradient(198deg, rgb(255 182 182) 63%, rgb(43 198 255) 100%);
+    box-shadow: 3px 4px 9px black;
+    transition: all .5s linear;
+    cursor: pointer;
+
+}
+
+.piko-card:hover {
+    transform: scale(1.2) rotateY(360deg);
+    box-shadow: 0px 0px 20px 8px rgb(92, 10, 10);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .piko-img {
     width: 100%;
     border-radius: 1em;
+    box-shadow: 0px 1px 5px #0a0a31;
 }
 
 .piko-info {
     padding-left: 1.25rem;
+    width: 30%;
+    text-align: end;
+    border-right: 1px solid black;
+    padding-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    font-size: 23px;
+    font-weight: bolder;
 }
 
 .info-text {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 0;
 }
 
 .piko-name {
     font-family: "copperplate", fantasy;
-    font-size: 1.5em;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: .3rem;
+    color: black;
+}
+
+.piko-card:hover .piko-name {
+    color: #2b8962;
 }
 
 .piko-abilities {
-
+    border-bottom: 1px solid black;
 }
 
 .piko-category {
-
+    border-bottom: 1px solid black;
 }
 
-.piko-weakness {
-
-}
+.piko-weakness {}

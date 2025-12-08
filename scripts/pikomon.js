@@ -7,7 +7,7 @@ export const generatePikomonHTML = () => {
         <article class="piko-card">
 
             <img src="${pikomon.imageUrl}" alt="image of ${pikomon.name}" class="piko-img"></img>
-            <h1 class="piko-name">${pikomon.name}</h1>
+            <h1 class="piko-name">This is ${pikomon.name}</h1>
 
             <section>
                 <div>
